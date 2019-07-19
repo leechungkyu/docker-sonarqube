@@ -10,6 +10,9 @@ ENV SONAR_VERSION=7.9.1 \
     SONARQUBE_JDBC_PASSWORD=sonar \
     SONARQUBE_JDBC_URL=
 
+# Set TimeZone
+RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
 # Http port
 EXPOSE 9000
 
